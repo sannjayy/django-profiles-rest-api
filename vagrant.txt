@@ -2,3 +2,8 @@ vagrant init ubuntu/bionic64
 vagrant up
 vagrant ssh
 cd /vagrant
+
+python -m venv ~/myenv
+source ~/myenv/bin/activate
+deactivate
+pip install -r requirements.txt
